@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 //import logo from './logo.svg';
 import './App.css';
-import images from './images.json'
+import imagesimport from './images1.json'
 import Wrapper from './components/Wrapper'
 import Navpills from './components/Navpills'
 
@@ -15,8 +15,8 @@ class App extends Component {
     message: "Click an image to begin!",
     topScore: 0,
     currentScore: 0,
-    images: images,
-    unselectedimages: images
+    imagesState: imagesimport,
+    // unselectedimages: images
 }
 
 
@@ -26,13 +26,16 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Navpills/>
+        <Navpills
+        message={this.state.message}
+        />
          <Title />
          {
-                    this.state.images.map(image => (
-                        <Card
-                            id={image.id}
-                            image={image.image}
+                    this.state.imagesState.map(imagecb => (
+                        <Card 
+                        message={this.state.message}
+                            //id={image.id}
+                            imageprop={imagecb.imag}
                             selectimage={this.selectimage} 
                             currentScore={this.state.currentScore}
                         />

@@ -4,7 +4,8 @@ import "./Card.css";
 const Card = props => (
     <div className="card">
         <div className="img-container">
-                <img  src={require("../../images/" + props.image)} />
+        {props.message}
+                <img  src={require("../../images/" + props.imageprop)} />
 
             
         </div>
