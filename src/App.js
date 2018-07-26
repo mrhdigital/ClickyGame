@@ -35,7 +35,7 @@ class App extends Component {
                         <Card 
                         message={this.state.message}
                             //id={image.id}
-                            imageprop={imagecb.imag}
+                            imagesimport={imagecb.imag}
                             selectimage={this.selectimage} 
                             currentScore={this.state.currentScore}
                         />

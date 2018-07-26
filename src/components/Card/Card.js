@@ -5,7 +5,7 @@ const Card = props => (
     <div className="card">
         <div className="img-container">
         {props.message}
-                <img  src={require("../../images/" + props.imageprop)} />
+                <img  src={require("../../imagesFolder/" + props.imagesimport)} />
 
             
         </div>
