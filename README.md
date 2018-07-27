@@ -20,7 +20,6 @@ This app is a memory game with React. This project required me to break up my ap
 - CSS
 - JavaScript
 - Node.js
-- MongoDB
 - Bootstrap
 - jQuery
 - React
